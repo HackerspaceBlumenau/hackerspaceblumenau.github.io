@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <h2>
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </h2>
+  <span class="post-meta">Publicado em {{ post.date | date: "%d/%m/%Y" }}</span>
+{% endfor %}
+

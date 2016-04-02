@@ -1,0 +1,32 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Hackerspace Blumenau
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hackerspace Blumenau
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://hackerspaceblumenau.github.io" # the base hostname & protocol for your site
+permalink: '/:slug.html'
+
+collections:
+  projects:
+    output: true
+  sitepages:
+    output: true
+
+# Social settings
+slack_username: hackerspaceblumenau
+github_username: HackerspaceBlumenau
+# twitter_username: HackerspaceBlumenau
+# facebook_username: HackerspaceBlumenau
+# googleplus_username: HackerspaceBlumenau
+
+# Build settings
+markdown: kramdown
+# timezone: 'America/Sao_Paulo'
