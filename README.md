@@ -6,6 +6,12 @@
 - Instale o Ruby 2+ no RVM (`rvm install 2.3.0`)
 - Instale a gema do jekyll (`gem install jekyll`)
 
+## Contribua
+
+Ajude-nos a melhorar este projeto, ele é seu também.
+
+Faça um fork e envie sua sugestão (aka Pull Request).
+
 ## Gerando conteúdo
 
 ### Páginas
@@ -65,3 +71,9 @@ Conteúdo do meu projeto.
 ### Inserindo imagens
 
 Para inserir uma imagem em um artigo, projeto ou página, você deve colocar a imagem na pasta `images`. E no local desejado você deve inserir a seguinte marcação `![Minha Imagem](/images/minha-imagem.png)`
+
+## Licença
+
+MIT para o código fonte do site.
+
+Creative Commons Attribution-ShareAlike 4.0 International para o conteúdo do site.
