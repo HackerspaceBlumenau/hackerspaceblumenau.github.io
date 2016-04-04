@@ -13,4 +13,4 @@ Basta informar seu email e você receberá um convite dentro de poucos minutos.
 
 Faça parte do [nosso Meetup](http://www.meetup.com/Hackerspace-Blumenau/) e fique por dentro dos próximos encontros.
 
-<iframe width="225" height="219" src="http://meetu.ps/2WpXKG" frameborder="0"></iframe>
+<iframe width="250" height="280" src="http://meetu.ps/2WpXKG" frameborder="0"></iframe>
