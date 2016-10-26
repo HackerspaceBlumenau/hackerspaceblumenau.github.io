@@ -11,6 +11,6 @@ Você pode requisitar um convite através [deste formulário]({{ site.slackin }}
 
 Basta informar seu email e você receberá um convite dentro de poucos minutos.
 
-Faça parte do [nosso Meetup](http://www.meetup.com/Hackerspace-Blumenau/) e fique por dentro dos próximos encontros.
+Faça parte do [nosso Google Group](https://groups.google.com/forum/#!forum/hackerspace-blumenau) e fique por dentro das atividades e dos próximos encontros.
 
-<iframe width="240" height="328" src="http://meetu.ps/2WpXKG" frameborder="0"></iframe>
+
