@@ -2,9 +2,11 @@
 layout: default
 ---
 
-{% for project in site.projects %}
+{% for p in site.projects %}
+  {% unless p.hidden %}
   <h2>
-    <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+    <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
   </h2>
+  {% endunless %}
 {% endfor %}
 

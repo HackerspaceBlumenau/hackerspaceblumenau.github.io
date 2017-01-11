@@ -1,6 +1,7 @@
 ---
 layout: project
 title:  "Computadores Compartilhados"
+hidden: true
 ---
 
 Disponibilizar computadores para uso coletivo no Hackerspace, usando peças de hardware doadas e software livre.
