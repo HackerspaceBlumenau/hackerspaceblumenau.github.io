@@ -6,6 +6,10 @@
 - Instale o Ruby 2+ no RVM (`rvm install 2.3.0`)
 - Instale a gema do jekyll (`gem install jekyll`)
 
+## Executando
+
+Execute o comando `jekyll serve` e acesse [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
+
 ## Contribua
 
 Ajude-nos a melhorar este projeto, ele é seu também.

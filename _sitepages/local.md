@@ -2,6 +2,7 @@
 layout: page
 title: Localização
 permalink: /localizacao/
+hidden: true
 ---
 
 O Hackerspace Blumenau está localizado na Rua Prof. Gustavo Brandes no bairro Garcia, dentro do Green Place Park.
