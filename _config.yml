@@ -8,12 +8,10 @@
 # Site settings
 title: Hackerspace Blumenau
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hackerspace Blumenau
+description: Um espaço comunitário, aberto e colaborativo com disponibilização de uma infraestrutura para realização de encontros, eventos e oficinas.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hackerspaceblumenau.github.io" # the base hostname & protocol for your site
 permalink: '/:slug.html'
-slackin: "https://hackerspacebnu.herokuapp.com"
 
 collections:
   projects:
@@ -22,13 +20,14 @@ collections:
     output: true
 
 # Social settings
+slackin: "https://hackerspacebnu.herokuapp.com"
 slack_username: hackerspaceblumenau
 github_username: HackerspaceBlumenau
 googlegroup_username: hackerspace-blumenau
 # twitter_username: HackerspaceBlumenau
-# facebook_username: HackerspaceBlumenau
-# googleplus_username: HackerspaceBlumenau
+facebook_username: hackerspace.blumenau
+googleplus_username: HackerspaceBlumenau
 
 # Build settings
 markdown: kramdown
-# timezone: 'America/Sao_Paulo'
+timezone: 'America/Sao_Paulo'
