@@ -7,7 +7,7 @@
 
 # Site settings
 title: Hackerspace Blumenau
-email: your-email@domain.com
+email: hackerspaceblumenau@gmail.com
 description: Um espaço comunitário, aberto e colaborativo com disponibilização de uma infraestrutura para realização de encontros, eventos e oficinas.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hackerspaceblumenau.github.io" # the base hostname & protocol for your site
@@ -26,7 +26,7 @@ github_username: HackerspaceBlumenau
 googlegroup_username: hackerspace-blumenau
 # twitter_username: HackerspaceBlumenau
 facebook_username: hackerspace.blumenau
-googleplus_username: HackerspaceBlumenau
+# googleplus_username: HackerspaceBlumenau
 
 # Build settings
 markdown: kramdown

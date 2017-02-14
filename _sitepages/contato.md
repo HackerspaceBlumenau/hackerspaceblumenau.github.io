@@ -11,6 +11,6 @@ Você pode requisitar um convite através [deste formulário]({{ site.slackin }}
 
 Basta informar seu email e você receberá um convite dentro de poucos minutos.
 
+Se você preferir, envie um email para <a href="mailto:hackerspaceblumenau@gmail.com">hackerspaceblumenau@gmail.com</a> que tentaremos responder o mais breve possível.
+
 Faça parte do [nosso Google Group](https://groups.google.com/forum/#!forum/hackerspace-blumenau) e fique por dentro das atividades e dos próximos encontros.
-
-
