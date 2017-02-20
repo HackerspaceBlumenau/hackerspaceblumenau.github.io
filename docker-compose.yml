@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+    web:
+        image: nginx:alpine
+        volumes:
+            - ./_site:/usr/share/nginx/html
+    build:
+        image: jekyll/jekyll
+        volumes:
+            - .:/src/jekyll
+        command: jekyll build --watch
