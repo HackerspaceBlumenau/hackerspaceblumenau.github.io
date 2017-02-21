@@ -5,8 +5,10 @@ services:
         image: nginx:alpine
         volumes:
             - ./_site:/usr/share/nginx/html
+        container_name: hacker_web
     build:
         image: jekyll/jekyll
         volumes:
-            - .:/src/jekyll
+            - ./:/srv/jekyll
+        container_name: hacker_build
         command: jekyll build --watch
