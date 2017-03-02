@@ -25,18 +25,11 @@ html, body {
     }
 }
 
-.logo-img {
-    width: 150px;
-    height: 150px;
-
-    img {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        margin: 0 auto;
-    }
+.img-logo {
+    width: 200px;
+    height: auto;
+    padding: 10px;
 }
-
 
 //
 // Desktop
