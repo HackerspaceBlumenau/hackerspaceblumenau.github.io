@@ -23,7 +23,7 @@ collections:
 slackin: "https://hackerspacebnu.herokuapp.com"
 slack_username: hackerspaceblumenau
 github_username: HackerspaceBlumenau
-googlegroup_username: hackerspace-blumenau
+# googlegroup_username: hackerspace-blumenau
 # twitter_username: HackerspaceBlumenau
 facebook_username: hackerspace.blumenau
 # googleplus_username: HackerspaceBlumenau
