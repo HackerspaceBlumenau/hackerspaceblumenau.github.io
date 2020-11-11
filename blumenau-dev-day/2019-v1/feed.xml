@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blumenau Dev Day 2019</title>
+    <description>Evento para reunir todas as comunidades de Blumenau SC</description>
+    <link>http://www.hackerspaceblumenau.org/blumenau-dev-day/2019/</link>
+    <atom:link href="http://www.hackerspaceblumenau.org/blumenau-dev-day/2019/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Evento Blumenau Dev Day confirmado!</title>
+        <description>&lt;p&gt;Estamos felizes em confirmar para o dia 07/12/2019 um evento que vai reunir as principais comunidades de Blumenaupara ter um dia de muito conhecimento e network. Gostariamos de informar a todos as comunidades que confirmaram presença para este evento:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;@Carlos Grahl AWS&lt;/li&gt;
+  &lt;li&gt;@lumakhl Meninas Digitais&lt;/li&gt;
+  &lt;li&gt;@Júlio e @rtancman GruPy&lt;/li&gt;
+  &lt;li&gt;@ricardo wordpress&lt;/li&gt;
+  &lt;li&gt;@mueller Agile Beer&lt;/li&gt;
+  &lt;li&gt;@Christian BlumenauJS&lt;/li&gt;
+  &lt;li&gt;@Tamara Code Like a Tester&lt;/li&gt;
+  &lt;li&gt;@marcosps LinuxKernelCamp&lt;/li&gt;
+  &lt;li&gt;@Thaise Medeiros e @Cristiano Rodrigues DotNetCoders&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Grande abraço,
+Hackerspace Blumenau&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 05 Sep 2019 05:00:00 -0300</pubDate>
+        <link>http://www.hackerspaceblumenau.org/blumenau-dev-day/2019/blog/evento-confirmado</link>
+        <guid isPermaLink="true">http://www.hackerspaceblumenau.org/blumenau-dev-day/2019/blog/evento-confirmado</guid>
+      </item>
+    
+  </channel>
+</rss>
