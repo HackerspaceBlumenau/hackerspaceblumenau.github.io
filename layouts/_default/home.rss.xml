@@ -1,0 +1,75 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = $pctx.RegularPages -}}
+{{- else -}}
+{{- $pages = $pctx.Pages -}}
+{{- end -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+    {{ with $.Site.Params.images -}}
+    <image>
+      <url>{{ index . 0 | absURL }}</url>
+      <title>{{ if eq  $.Title  $.Site.Title }}{{ $.Site.Title }}{{ else }}{{ with $.Title }}{{.}} on {{ end }}{{ $.Site.Title }}{{ end }}</title>
+      <link>{{ $.Permalink }}</link>
+    </image>
+    {{- end }}
+    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
+    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{ with .OutputFormats.Get "RSS" -}}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- $regularPages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+    {{ range $regularPages }}
+    <item>
+      {{ $itemTitle := .Title -}}
+      {{- $itemURL := .Permalink }}
+      <title>{{ $itemTitle }}</title>
+      <link>{{ $itemURL }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ .Summary | html }}</description>
+      {{ with .Params.images }}
+      {{ range first 6 . -}}
+      <image>
+        <url>{{ . | absURL }}</url>
+        <title>{{ $itemTitle }}</title>
+        <link>{{ $itemURL }}</link>
+      </image>
+      {{ end -}}
+      {{ else -}}
+      {{- $images := $.Resources.ByType "image" -}}
+      {{- $featured := $images.GetMatch "*feature*" -}}
+      {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+      {{- with $featured -}}
+      <image>
+        <url>{{ $featured.Permalink }}</url>
+        <title>{{ if eq  $.Title  $.Site.Title }}{{ $.Site.Title }}{{ else }}{{ with $.Title }}{{.}} on {{ end }}{{ $.Site.Title }}{{ end }}</title>
+        <link>{{ $.Permalink }}</link>
+      </image>
+      {{ else -}}
+      {{- with $.Site.Params.images -}}
+      <image>
+        <url>{{ index . 0 | absURL }}</url>
+        <title>{{ $.Site.Title }}</title>
+        <link>{{ $.Permalink }}</link>
+      </image>
+      {{- end }}{{ end }}{{ end }}
+    </item>
+    {{- end -}}
+  </channel>
+</rss>

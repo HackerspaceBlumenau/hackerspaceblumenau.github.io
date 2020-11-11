@@ -1,0 +1,55 @@
+{{ $author := $.Site.GetPage "authors" .Params.id }}
+{{ with $author }}
+<div class="mt-3 mb-5">
+  <div class="text-center">
+    {{- with .Params.avatar }}
+      <img src="{{ . | absURL }}"
+           class="border rounded-circle mt-2"
+           width="120"
+           alt="{{ $author.Title }}">
+    {{- else -}}
+    {{- with .Params.gravatar }}
+      <img src="https://www.gravatar.com/avatar/{{ . | md5 }}?s=120&d=robohash"
+           class="border rounded-circle mt-2"
+           alt="{{ $author.Title }}">
+    {{ end -}}
+    {{- end -}}
+  </div>
+  <div class="mt-3 text-center">
+    <h3><a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a></h3>
+    <div>
+      {{- with .Params.www }}
+      <a href="{{ . }}" title="WWW" target="_blank" class="mr-1"><i class="fas fa-link"></i></a>
+      {{ end -}}
+      {{- with .Params.email }}
+      <a href="mailto:{{ . }}" title="E-mail" class="mr-1"><i class="far fa-envelope"></i></a>
+      {{ end -}}
+      {{- with .Params.twitter }}
+      <a href="https://twitter.com/{{ . }}" title="Twitter" target="_blank" class="mr-1"><i class="fab fa-twitter"></i></a>
+      {{ end -}}
+      {{- with .Params.linkedin }}
+      <a href="https://www.linkedin.com/in/{{ . }}" title="LinkedIn" target="_blank" class="mr-1"><i class="fab fa-linkedin-in"></i></a>
+      {{ end -}}
+      {{- with .Params.linkedin_c }}
+      <a href="https://www.linkedin.com/company/{{ . }}" title="LinkedIn" target="_blank" class="mr-1"><i class="fab fa-linkedin-in"></i></a>
+      {{ end -}}
+      {{- with .Params.instagram }}
+      <a href="https://www.instagram.com/{{ . }}" title="Instagram" target="_blank" class="mr-1"><i class="fab fa-instagram"></i></a>
+      {{ end -}}
+      {{- with .Params.facebook }}
+      <a href="https://www.facebook.com/{{ . }}" title="Facebook" target="_blank" class="mr-1"><i class="fab fa-facebook"></i></a>
+      {{ end -}}
+      {{- with .Params.youtube_c }}
+      <a href="https://www.youtube.com/c/{{ . }}" title="YouTUbe" target="_blank" class="mr-1"><i class="fab fa-youtube"></i></a>
+      {{ end -}}
+      {{- with .Params.youtube_u }}
+      <a href="https://www.youtube.com/channel/{{ . }}" title="YouTUbe" target="_blank" class="mr-1"><i class="fab fa-youtube"></i></a>
+      {{ end -}}
+      {{- with .Params.github }}
+      <a href="https://github.com/{{ . }}" title="GitHub" target="_blank" class="mr-1"><i class="fab fa-github"></i></a>
+      {{ end -}}
+    </div>
+    <span class="text-muted">{{ .Params.bio }}</span>
+  </div>
+</div>
+{{ end }}

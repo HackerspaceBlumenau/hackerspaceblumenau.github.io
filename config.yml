@@ -1,0 +1,284 @@
+baseurl: https://www.hackerspaceblumenau.org/
+title: Hackerspace Blumenau
+languageCode: pt-BR
+languageName: Portuguese
+defaultContentLanguage: pt
+enableInlineShortcodes: true
+enableRobotsTXT: true
+summarylength: 10
+enableEmoji: true
+paginate: 25
+theme: iara
+# disqusShortname: foobar
+# googleAnalytics: UA-1234-1
+disableKinds:
+  - pages
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  author: authors
+
+permalinks:
+  blog: /blog/:slug/
+  categories: /categorias/:slug/
+  tags: /tags/:slug/
+  authors: /autores/:slug/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+
+social:
+  twitter: hackerspacebnu
+
+params:
+  mainSections:
+    - blog
+  title: Hackerspace Blumenau
+  description: Um espaço comunitário, aberto e colaborativo para realização de encontros, eventos, oficinas e projetos em diversas áreas relacionadas a tecnologia.
+  images:
+    - /images/logos/logo-bg.png
+    - /images/logos/logo.png
+  logo: /images/logos/logo-64.png
+  copyright: Hackerspace Blumenau
+  builtWith: false
+
+  # dateFormat: "Jan 2, 2006"
+  dateFormat: "02/01/2006"
+
+  organization:
+    name: Hackerspace Blumenau
+    url: https://www.hackerspaceblumenau.org/
+    logo: /images/logos/logo.png
+    sameas:
+      - https://twitter.com/hackerspacebnu
+      - https://www.linkedin.com/company/hackerspace-blumenau/
+      - https://www.facebook.com/hackerspace.blumenau
+      - https://www.meetup.com/hackerspaceblumenau/
+      - https://www.youtube.com/channel/UCxnv5D-9aVcJO5Ah1Bq072g
+
+
+  #
+  # Sidebar
+  #
+  sidebar:
+    show: true
+
+    # categories:
+    #   show: true   # Show categories in sidebar
+    #   count: true  # Show article count in category
+    # tags:
+    #   show: false   # Show tags in sidebar
+    #   count: true  # Show article count in tag
+    #
+    # Feature articles
+    #
+    # featured:
+    #   index: true  # Show index number
+    #   item:
+    #     - path: blog/folder/index.md
+    #     - path: blog/folder/index.md
+
+  license:
+    name: CC BY-SA 4.0
+    url: 'https://creativecommons.org/licenses/by-sa/4.0'
+
+  # search:
+  #   enabled: true
+  #   provider: google
+  #   google:
+  #     id: 1234:abcd
+
+  # addthis:
+  #   pubid: ra-1234
+
+  # ads:
+  #   google:
+  #     id: ca-pub-1234
+
+  social:
+    - icon: fab fa-meetup
+      title: Meetup
+      url: https://www.meetup.com/hackerspaceblumenau/
+    - icon: fab fa-slack
+      title: Slack
+      url: /slack/
+    - icon: fab fa-telegram-plane
+      title: Telegram
+      url: https://t.me/hackerspaceblumenau
+    # - icon: fab fa-discord
+    #   title: Discord
+    #   url: https://discord.gg/slug
+    - icon: fab fa-twitter
+      title: Twitter
+      url: https://twitter.com/hackerspacebnu
+    - icon: fab fa-linkedin-in
+      title: Linkedin
+      url: https://www.linkedin.com/company/hackerspace-blumenau/
+    - icon: fab fa-facebook-f
+      title: Facebook
+      url: https://www.facebook.com/hackerspace.blumenau
+    - icon: fab fa-youtube
+      title: YouTube
+      url: https://www.youtube.com/channel/UCxnv5D-9aVcJO5Ah1Bq072g
+    # - icon: fab fa-instagram
+    #   title: Instagram
+    #   url: https://www.instagram.com/username/
+    # - icon: fab fa-github-alt
+    #   title: GitHub
+    #   url: https://github.com/HackerspaceBlumenau
+menu:
+  main:
+    - name: Início
+      weight: 1
+      url: /
+    - name: Blog
+      weight: 2
+      url: /blog/
+    - name: Agenda
+      weight: 3
+      url: /agenda/
+    - name: Submeter palestra
+      weight: 4
+      url: /submeter-palestra/
+    - name: Contato
+      weight: 5
+      url: /contato/
+
+  # carousel:
+  #   - name: Cloud Computing
+  #     weight: 1
+  #     url: /categorias/cloud-computing/
+  #   - name: Embarcados
+  #     weight: 2
+  #     url: /categorias/embarcados/
+  #   - name: Data Science
+  #     weight: 3
+  #     url: /categorias/data-science/
+  #   - name: IA
+  #     weight: 3
+  #     url: /categorias/inteligencia-artificial/
+  #   - name: Distros
+  #     weight: 4
+  #     url: /categorias/distros/
+  #   - name: Segurança
+  #     weight: 5
+
+  terms:
+    - name: Código de Conduta
+      weight: 1
+      url: /coc/
+  #   - name: Privacidade
+  #     weight: 2
+  #     url: /politica-de-privacidade/
+
+  # footer1:
+  #   - name: Cloud Computing
+  #     weight: 1
+  #     url: /categorias/cloud-computing/
+  #     pre: <b>
+  #     post: </b>
+  #   - name: Kubernetes
+  #     weight: 2
+  #     url: /tags/kubernetes/
+
+  # footer2:
+  #   - name: Embarcados
+  #     weight: 1
+  #     url: /categorias/embarcados/
+  #     pre: <b>
+  #     post: </b>
+  #   - name: Raspberry Pi
+  #     weight: 2
+  #     url: /tags/raspberry-pi/
+
+  # footer3:
+  #   - name: Desenvolvimento
+  #     weight: 1
+  #     url: /categorias/desenvolvimento/
+  #     pre: <b>
+  #     post: </b>
+  #   - name: Python
+  #     weight: 2
+  #     url: /tags/python/
+
+  footer4:
+    - name: Agenda de Eventos
+      weight: 1
+      url: /agenda/
+    - name: Submeter proposta de palestra
+      weight: 2
+      url: /submeter-palestra/
+
+  footer5:
+    - name: Galeria de Fotos
+      weight: 1
+      url: /galeria-de-fotos/
+    - name: Apoio
+      weight: 2
+      url: /apoio/
+    - name: O Espaço
+      weight: 3
+      url: /o-espaco/
+
+  footer6:
+    - name: Contato
+      weight: 1
+      url: /contato/
+      # pre: <b>
+      # post: </b>
+    - name: Sobre nós
+      weight: 2
+      url: /sobre/
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ''
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+    style: github
+    tabWidth: 4
+
+imaging:
+  resampleFilter: Linear
+  quality: 90
+  anchor: smart
+  bgColor: "#ffffff"
+  exif:
+    includeFields: ""
+    excludeFields: ""
+    disableDate: true
+    disableLatLong: true

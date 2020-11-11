@@ -1,0 +1,49 @@
+{{- define "main" -}}
+{{- $showSidebar := ne .Site.Params.sidebar.show false -}}
+<div class="container">
+  <div class="row no-gutters mb-5">
+    <section class="{{ if $showSidebar }}col-lg-8{{ else }}offset-lg-1 col-lg-10{{ end }}">
+      <div id="carousel-photos" class="carousel slide mt-5 mb-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-photos" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-photos" data-slide-to="1"></li>
+          <li data-target="#carousel-photos" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/carousel/1o-encontro-wide.jpg" class="d-block w-100" alt="1o Encontro">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/carousel/workshop-python-wide.jpg" class="d-block w-100" alt="Workshop Python">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/carousel/dev-day-wide.jpg" class="d-block w-100" alt="Blumenau Dev Day">
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <h3>O que é o Hackerspace Blumenau?</h3>
+        <p>O Hackerspace Blumenau visa ser um espaço comunitário, aberto e colaborativo para realização de encontros, eventos, oficinas e projetos em diversas áreas relacionadas a tecnologia, visando sempre a troca de conhecimento.</p>
+        <h3>Quem pode participar?</h3>
+        <p>O espaço é aberto a comunidade, sendo assim todos podem participar.</p>
+        <h3>Como participar?</h3>
+        <p>Confira nossa <a href="/agenda/">agenda</a> para ficar pro dentro dos eventos, ou junte-se a nossa comunidade no <a href="/slack/">Slack</a> para trocar ideias e bater um papo.</p>
+        <h3>Com que frequência nos reunimos?</h3>
+        <p>Geralmente nos encontramos a cada 15 dias, atravéz algum meetup.</p>
+      </div>
+    </section>
+    {{ if $showSidebar -}}
+    {{- $sidebarOnLeft := eq .Site.Params.sidebar.location "left" -}}
+    <div class="col-lg-4 {{ if $sidebarOnLeft }}order-first{{ end }}">
+      <aside class="sidebar mx-3 mt-lg-5 {{ if $sidebarOnLeft }}mr-lg-5{{ else }}ml-lg-5{{ end }}">
+        {{ partial "sidebar-author.html" . }}
+        {{ partial "sidebar-featured.html" . }}
+        {{ partial "custom/sidebar.html" . }}
+        {{ partial "sidebar-categories.html" . }}
+        {{ partial "sidebar-tags.html" . }}
+      </aside>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{- end }}
