@@ -10,7 +10,7 @@ enableEmoji: true
 paginate: 25
 theme: iara
 # disqusShortname: foobar
-# googleAnalytics: UA-1234-1
+googleAnalytics: UA-91819658-1
 disableKinds:
   - pages
 
@@ -94,11 +94,11 @@ params:
     name: CC BY-SA 4.0
     url: 'https://creativecommons.org/licenses/by-sa/4.0'
 
-  # search:
-  #   enabled: true
-  #   provider: google
-  #   google:
-  #     id: 1234:abcd
+  search:
+    enabled: true
+    provider: google
+    google:
+      id: 8f43447b62360b8aa
 
   # addthis:
   #   pubid: ra-1234
