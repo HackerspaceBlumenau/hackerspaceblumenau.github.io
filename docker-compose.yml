@@ -9,4 +9,4 @@ services:
       - "5000:5000"
     volumes:
       - .:/blog
-      - /home/alexandre/workspace/alexandrevicenzi/iara:/blog/themes/iara
+      # - /home/alexandre/workspace/alexandrevicenzi/iara:/blog/themes/iara
