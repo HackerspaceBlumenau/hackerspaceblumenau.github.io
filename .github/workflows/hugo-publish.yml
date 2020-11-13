@@ -17,7 +17,7 @@ jobs:
         # Don't forget to set the secret value in the project settings.
         githubToken: ${{ secrets.HUGO_GH_TOKEN }}
         # Use if you have a custom domain for your site.
-        cname: hackerspaceblumenau.org
+        cname: www.hackerspaceblumenau.org
         # Use if your site is not hosted on the gh-pages branch.
         branch: gh-pages
         # Use if your pushing to a different repo.
