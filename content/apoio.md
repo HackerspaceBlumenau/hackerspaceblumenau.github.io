@@ -30,6 +30,16 @@ Apoiadores e parceiros do Hackerspace Blumenau.
   </div>
   <div class="col">
     <div class="card mb-3">
+      <a href="https://blumenau.sc.python.org.br/" target="_blank">
+        <img src="/images/apoio/grupy.jpg" class="card-img-top p-3 m-auto" alt="GruPy Blumenau">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title mt-0 small">GruPy</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card mb-3">
       <a href="https://buteco.tech/" target="_blank">
         <img src="/images/apoio/buteco.png" class="card-img-top p-3 m-auto" alt="Buteco Tecnológico">
       </a>

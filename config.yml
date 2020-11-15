@@ -203,21 +203,22 @@ menu:
   #     weight: 2
   #     url: /tags/raspberry-pi/
 
-  # footer3:
-  #   - name: Desenvolvimento
-  #     weight: 1
-  #     url: /categorias/desenvolvimento/
-  #     pre: <b>
-  #     post: </b>
-  #   - name: Python
-  #     weight: 2
-  #     url: /tags/python/
+  footer3:
+    - name: Blumenau Dev Day
+      weight: 1
+      url: /blumenau-dev-day/
+    - name: FLISoL
+      weight: 2
+      url: /flisol/
+    - name: Hacktoberfest
+      weight: 2
+      url: /hacktoberfest/
 
   footer4:
-    - name: Agenda de Eventos
+    - name: Agenda
       weight: 1
       url: /agenda/
-    - name: Submeter proposta de palestra
+    - name: Submeter palestra
       weight: 2
       url: /submeter-palestra/
 
@@ -228,19 +229,20 @@ menu:
     - name: Apoio
       weight: 2
       url: /apoio/
-    - name: O Espaço
+    - name: Espaço
       weight: 3
-      url: /o-espaco/
+      url: /espaco/
 
   footer6:
-    - name: Contato
-      weight: 1
-      url: /contato/
-      # pre: <b>
-      # post: </b>
     - name: Sobre nós
-      weight: 2
+      weight: 1
       url: /sobre/
+    - name: Nossa História
+      weight: 2
+      url: /nossa-historia/
+    - name: Contato
+      weight: 3
+      url: /contato/
 
 markup:
   defaultMarkdownHandler: goldmark

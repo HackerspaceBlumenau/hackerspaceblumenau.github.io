@@ -1,6 +1,8 @@
 ---
-title: O Espaço
-slug: o-espaco
+title: Espaço
+slug: espaco
+aliases:
+  - o-espaco
 disable_share: true
 disable_comments: true
 ---
