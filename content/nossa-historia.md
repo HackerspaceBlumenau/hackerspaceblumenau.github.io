@@ -11,6 +11,8 @@ Conheça um pouco sobre nossa história.
 
 O Ricardo Lima Gonçalves começou a discutir sobre um possível Hackerspace em Blumenau no dia 6 de fevereiro de 2016, com um [email enviado a lista do HackerspaceSC][email-lista]. Foi nesse momento que uma data inicial para conversa sobre um possível Hackerspace foi definida, e algumas pessoas participaram da reunião de formação.
 
+Dia 12 de março de 2016 iniciou-se uma trajetória que jamais imaginávamos conquistar. O Hackerspace Blumenau cresceu e tomou forma no decorrer dos anos, tornando-se um dos principais grupos tecnológicos da região de Blumenau e Santa Catarina.
+
 Neste dia estavam presentes:
 
 - Alexandre Vicenzi
@@ -19,8 +21,6 @@ Neste dia estavam presentes:
 - Marcos Paulo de Souza
 - Ricardo Lima Gonçalves
 - Samuel Riesz
-
-Dia 12 de março de 2016 iniciou-se uma trajetória que jamais imaginávamos conquistar. O Hackerspace Blumenau cresceu e tomou forma no decorrer dos anos, tornando-se um dos principais grupos tecnológicos da região de Blumenau e Santa Catarina.
 
 ## 1º encontro
 
