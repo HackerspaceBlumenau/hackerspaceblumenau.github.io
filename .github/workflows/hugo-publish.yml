@@ -32,3 +32,4 @@ jobs:
           # Use this if your site isn't in the root of your repo.
           # The root of your repo can be found at /github/workspace
           # siteDir: /github/workspace/site
+          hugoVersion: extended_0.110.0
