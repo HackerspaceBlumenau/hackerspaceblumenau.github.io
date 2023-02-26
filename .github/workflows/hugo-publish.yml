@@ -7,29 +7,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: Publish
-        uses: chabad360/hugo-gh-pages@master
+          fetch-depth: 0
+
+      - name: Print theme commit hash
+        run: cd ./themes/iara && git log --oneline
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          # Remember to set this as a secret (i.e. secrets.HUGO_GH_TOKEN).
-          # Don't forget to set the secret value in the project settings.
-          githubToken: ${{ secrets.HUGO_GH_TOKEN }}
-          # Use if you have a custom domain for your site.
-          cname: www.hackerspaceblumenau.org
-          # Use if your site is not hosted on the gh-pages branch.
-          branch: gh-pages
-          # Use if your pushing to a different repo.
-          # Dont add ".git" to the end of the URL (youl'll get 404s).
-          # repo: you/you.github.io
-          # Use if your site requires a specific version of Hugo.
-          # Append "extended_" to the begining to use Hugo Extended.
-          # hugoVersion: extended_0.58.3
-          # Use if you want to pass some custom arguments to Hugo.
-          args: --gc --minify --cleanDestinationDir
-          # Use this if your site isn't in the root of your repo.
-          # The root of your repo can be found at /github/workspace
-          # siteDir: /github/workspace/site
-          hugoVersion: extended_0.110.0
+          hugo-version: "latest"
+          extended: true
+
+      - name: Build
+        run: hugo --minify --cleanDestinationDir --gc --baseURL https://www.hackerspaceblumenau.org
+
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   # if: github.ref == 'refs/heads/master'
+      #   with:
+      #     github_token: ${{ secrets.HUGO_GH_TOKEN }}
+      #     publish_dir: ./public
