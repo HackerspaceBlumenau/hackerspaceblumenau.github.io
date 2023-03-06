@@ -10,7 +10,7 @@ enableEmoji: true
 paginate: 25
 theme: iara
 # disqusShortname: foobar
-googleAnalytics: UA-91819658-1
+googleAnalytics: G-KHRLNGNL5N
 disableKinds:
   - pages
 
