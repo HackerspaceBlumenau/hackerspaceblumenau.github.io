@@ -5,8 +5,11 @@ disable_share: true
 disable_comments: true
 ---
 
-Para entrar no Slack você acesse este [link](https://join.slack.com/t/hackerspaceblumenau/shared_invite/zt-1pmb84wc4-zNRhKV5g~bSe7zj8YUoC7A).
+A comunidade do Hackerspace Blumenau está no Slack.
 
-Caso você ja possua uma conta [clique aqui][slack].
+Para receber um convite fazer parte da comunidade [clique aqui][slack-in].
+
+Caso você já possua uma conta [clique aqui][slack].
 
 [slack]: https://hackerspaceblumenau.slack.com/
+[slack-in]: https://join.slack.com/t/hackerspaceblumenau/shared_invite/zt-1pmb84wc4-zNRhKV5g~bSe7zj8YUoC7A
