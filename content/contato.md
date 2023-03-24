@@ -5,11 +5,9 @@ disable_share: true
 disable_comments: true
 ---
 
-A melhor forma de entrar em contato com os membros e organizadores do Hackerspace Blumenau é através do [Slack][slack].
+A melhor forma de entrar em contato com os membros e organizadores do Hackerspace Blumenau é através do canal no [Slack][slack] ou grupo no [Telegram][telegram].
 
-Para entrar no Slack você deve requisitar um convite através [deste formulário][slack-in].
+Se você preferir, envie um email para <a href="mailto:contato@hackerspaceblumenau.org">contato@hackerspaceblumenau.org</a> que tentaremos responder o mais breve possível.
 
-Se você preferir, envie um email para <a href="mailto:hackerspaceblumenau@gmail.com">hackerspaceblumenau@gmail.com</a> que tentaremos responder o mais breve possível.
-
-[slack]: https://hackerspaceblumenau.slack.com/
-[slack-in]: /slack/
+[slack]: /slack/
+[telegram]: https://t.me/hackerspaceblumenau
