@@ -120,21 +120,21 @@ params:
     # - icon: fab fa-discord
     #   title: Discord
     #   url: https://discord.gg/slug
-    - icon: fab fa-twitter
-      title: Twitter
-      url: https://twitter.com/hackerspacebnu
     - icon: fab fa-linkedin-in
       title: Linkedin
       url: https://www.linkedin.com/company/hackerspace-blumenau/
+    - icon: fab fa-twitter
+      title: Twitter
+      url: https://twitter.com/hackerspacebnu
+    - icon: fab fa-instagram
+      title: Instagram
+      url: https://www.instagram.com/hs.blumenau/
     - icon: fab fa-facebook-f
       title: Facebook
       url: https://www.facebook.com/hackerspace.blumenau
     - icon: fab fa-youtube
       title: YouTube
       url: https://www.youtube.com/channel/UCxnv5D-9aVcJO5Ah1Bq072g
-    # - icon: fab fa-instagram
-    #   title: Instagram
-    #   url: https://www.instagram.com/username/
     # - icon: fab fa-github-alt
     #   title: GitHub
     #   url: https://github.com/HackerspaceBlumenau
@@ -149,11 +149,8 @@ menu:
     - name: Agenda
       weight: 3
       url: /agenda/
-    - name: Submeter palestra
-      weight: 4
-      url: /submeter-palestra/
     - name: Contato
-      weight: 5
+      weight: 4
       url: /contato/
 
   # carousel:
@@ -218,9 +215,12 @@ menu:
     - name: Agenda
       weight: 1
       url: /agenda/
-    - name: Submeter palestra
+    - name: Comunidade
       weight: 2
-      url: /submeter-palestra/
+      url: /comunidade/
+    - name: Submeter proposta
+      weight: 3
+      url: /submeter-proposta/
 
   footer5:
     - name: Galeria de Fotos

@@ -24,7 +24,7 @@ Neste dia estavam presentes:
 
 ## 1º encontro
 
-O primeiro meetup ocorreu em 2 de abril de 2016 no [Greenplace Park][greenplace]. Neste dia, o Marcos Paulo de Souza contou como ele fez de um aplicativo de rádio FM como seu TCC, e falou sobre Kernel, Alsa, SDL e C.
+O primeiro meetup ocorreu em 2 de abril de 2016 no [Greenplace Park][greenplace]. Neste dia, o Marcos Paulo de Souza contou como ele fez de um aplicativo de rádio FM como seu TCC, falou sobre Kernel, Alsa, SDL e C.
 
 Neste dia estavam presentes:
 
@@ -42,20 +42,5 @@ O meetup sobre Docker do Jonathan André Schweder foi inusitado. Era esperado ce
 
 {{<figure src="/images/historia/encontro-docker.jpg" alt="1º encontro">}}
 
-## Locais onde já fizemos encontros
-
-Como não temos um espaço próprio ainda, já fizemos eventos em diversos locais, incluindo:
-
-- [Greenplace Park][greenplace]
-- [Instituto Gene][gene]
-- [Universidade Regional de Blumenau][furb]
-- [Inventti][inventti]
-- [HBSIS][hbsis]
-- Casa do Marcos em Gaspar :D
-
 [email-lista]: https://groups.google.com/g/hackerspacesc/c/0XpLWJ-dbBk
 [greenplace]: https://greenplacepark.com/
-[gene]: https://www.institutogene.org.br/
-[furb]: https://www.furb.br/
-[inventti]: https://inventti.com.br/
-[hbsis]: https://hbsis.com.br/

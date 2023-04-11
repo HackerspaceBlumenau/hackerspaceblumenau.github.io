@@ -4,3 +4,4 @@ temp/
 _gen/
 docs/
 public/
+.hugo_build.lock

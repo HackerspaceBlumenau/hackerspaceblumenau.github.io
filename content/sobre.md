@@ -5,7 +5,7 @@ disable_share: true
 disable_comments: true
 ---
 
-O Hackerspace Blumenau (HSBNU) é um espaço comunitário para troca de ideias.
+O Hackerspace Blumenau (HSBNU) é um espaço comunitário para troca de ideias sobre tecnologia.
 
 ## Missão
 
@@ -23,7 +23,7 @@ Os eventos que organizamos anualmente são:
 - FLISoL Blumenau
 - Hacktoberfest Blumenau
 
-Além dos eventos, organizamos vários meetups durante o ano, geralmente a cada 15 dias.
+Além dos eventos, organizamos vários meetups durante o ano.
 
 ## Associação
 
