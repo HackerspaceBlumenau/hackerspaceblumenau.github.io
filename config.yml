@@ -1,4 +1,4 @@
-baseurl: https://www.hackerspaceblumenau.org/
+baseurl: https://hackerspaceblumenau.net.br/
 title: Hackerspace Blumenau
 languageCode: pt-BR
 languageName: Portuguese
@@ -59,7 +59,7 @@ params:
 
   organization:
     name: Hackerspace Blumenau
-    url: https://www.hackerspaceblumenau.org/
+    url: https://www.hackerspaceblumenau.net.br/
     logo: /images/logos/logo.png
     sameas:
       - https://twitter.com/hackerspacebnu
@@ -111,9 +111,9 @@ params:
     - icon: fab fa-meetup
       title: Meetup
       url: https://www.meetup.com/hackerspaceblumenau/
-    - icon: fab fa-slack
-      title: Slack
-      url: /slack/
+    # - icon: fab fa-slack
+    #   title: Slack
+    #   url: /slack/
     - icon: fab fa-telegram-plane
       title: Telegram
       url: https://t.me/hackerspaceblumenau
