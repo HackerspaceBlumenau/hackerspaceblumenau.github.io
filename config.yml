@@ -7,12 +7,11 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 summarylength: 10
 enableEmoji: true
-paginate: 25
+pagination:
+  pageSise: 25
 theme: iara
 # disqusShortname: foobar
 googleAnalytics: G-KHRLNGNL5N
-disableKinds:
-  - pages
 
 taxonomies:
   category: categories

@@ -3,7 +3,7 @@ services:
   app:
     build: .
     working_dir: /blog
-    command: hugo server -v --bind "0.0.0.0" --port 5000 --watch --gc --cleanDestinationDir -D -E -F
+    command: hugo server --bind "0.0.0.0" --port 5000 --watch --gc --cleanDestinationDir -D -E -F
     user: "1000:1000"
     ports:
       - "5000:5000"
